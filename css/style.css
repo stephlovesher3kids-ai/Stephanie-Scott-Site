@@ -26,6 +26,12 @@ body {
     margin: 0 auto;
 }
 
+/* Article Container specifically for long-form SEO content */
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
     font-weight: 400;
@@ -154,7 +160,9 @@ p {
 
 .page-header h1 {
     font-size: 3.5rem;
+    line-height: 1.1;
     letter-spacing: -0.5px;
+    margin-bottom: 1.5rem;
 }
 
 .section {
@@ -242,6 +250,32 @@ p {
     color: var(--accent);
     display: block;
     margin-bottom: 1rem;
+}
+
+/* Rich Text Content for SEO Pages */
+.rich-text h2 {
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    color: var(--accent);
+}
+.rich-text h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+}
+.rich-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.rich-text ul {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+.rich-text li {
+    margin-bottom: 0.5rem;
 }
 
 .lead-capture-grid {
