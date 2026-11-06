@@ -1,11 +1,11 @@
 /* Core Variables - Editorial & Restrained */
 :root {
-    --text-main: #0B1623; /* Deep Midnight Blue / Almost Black */
-    --text-muted: #516575; /* Steel Blue Muted */
+    --text-main: #0B1623;
+    --text-muted: #516575;
     --bg-main: #FAFAFA;
     --bg-alt: #FFFFFF;
     --border-color: #E2E8ED;
-    --accent: #1E5084; /* Unique Sophisticated Blue */
+    --accent: #1E5084;
     --accent-hover: #153A61;
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --font-serif: "Playfair Display", "Didot", Georgia, "Times New Roman", serif;
@@ -45,7 +45,6 @@ p {
     margin-bottom: 2rem;
 }
 
-/* Button Styles */
 .btn-primary {
     display: inline-block;
     background-color: var(--accent);
@@ -82,7 +81,6 @@ p {
     border-bottom-color: var(--accent);
 }
 
-/* Navigation */
 .scott-nav {
     background-color: var(--bg-alt);
     border-bottom: 1px solid var(--border-color);
@@ -112,7 +110,6 @@ p {
     line-height: 1.1;
 }
 
-/* TREC Compliance */
 .logo-title {
     font-size: 0.9rem;
     color: var(--text-muted);
@@ -149,7 +146,6 @@ p {
     color: var(--accent) !important;
 }
 
-/* Page Headers */
 .page-header {
     padding: 100px 0 60px 0;
     background-color: var(--bg-alt);
@@ -161,7 +157,6 @@ p {
     letter-spacing: -0.5px;
 }
 
-/* Section Spacing */
 .section {
     padding: 100px 0;
 }
@@ -178,7 +173,6 @@ p {
     color: var(--bg-alt);
 }
 
-/* Hero Section */
 .hero {
     background-color: var(--bg-main);
     padding: 100px 0 120px 0;
@@ -228,7 +222,6 @@ p {
     object-fit: cover;
 }
 
-/* Value Props / Educator Edge Grid */
 .editorial-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -251,7 +244,6 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Forms (Lead Capture Flow) */
 .lead-capture-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -284,7 +276,6 @@ p {
     border-color: var(--accent);
 }
 
-/* TREC Compliant Footer */
 .site-footer {
     background-color: var(--text-main);
     color: #fff;
@@ -302,7 +293,7 @@ p {
 .footer-brand .broker-name {
     display: block;
     color: #A0B3C6;
-    font-size: 1.1rem; /* Prominent sizing for TREC compliance */
+    font-size: 1.1rem;
     margin-top: 5px;
     font-weight: 500;
 }
@@ -332,7 +323,6 @@ p {
     color: #7A8F9E;
 }
 
-/* Mobile */
 @media (max-width: 900px) {
     .hero-grid, .editorial-grid, .lead-capture-grid, .footer-grid {
         grid-template-columns: 1fr;
