@@ -112,7 +112,7 @@ p {
     line-height: 1.1;
 }
 
-/* TREC Compliance: Brokerage identification font size prominently sized */
+/* TREC Compliance */
 .logo-title {
     font-size: 0.9rem;
     color: var(--text-muted);
@@ -215,12 +215,10 @@ p {
 .image-placeholder {
     width: 100%;
     height: 600px;
-    background-color: #EBEBEB;
+    background-color: var(--border-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #999;
-    font-size: 0.85rem;
     overflow: hidden;
 }
 
