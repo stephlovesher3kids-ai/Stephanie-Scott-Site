@@ -26,7 +26,7 @@ body {
     margin: 0 auto;
 }
 
-/* Article Container specifically for long-form SEO content */
+/* Article Container specifically for long-form content */
 .article-container {
     max-width: 800px;
     margin: 0 auto;
@@ -252,7 +252,7 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Rich Text Content for SEO Pages */
+/* Rich Text Content for Editorial Pages */
 .rich-text h2 {
     font-size: 2.2rem;
     margin-top: 3rem;
