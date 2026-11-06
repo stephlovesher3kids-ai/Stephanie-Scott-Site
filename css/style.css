@@ -1,13 +1,14 @@
 /* Core Variables - Editorial & Restrained */
 :root {
-    --text-main: #111111;
-    --text-muted: #555555;
+    --text-main: #0B1623; /* Deep Midnight Blue / Almost Black */
+    --text-muted: #516575; /* Steel Blue Muted */
     --bg-main: #FAFAFA;
     --bg-alt: #FFFFFF;
-    --border-color: #E5E5E5;
-    --accent: #5b7065; /* Muted Sage */
+    --border-color: #E2E8ED;
+    --accent: #1E5084; /* Unique Sophisticated Blue */
+    --accent-hover: #153A61;
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+    --font-serif: "Playfair Display", "Didot", Georgia, "Times New Roman", serif;
 }
 
 body {
@@ -40,28 +41,28 @@ p {
 .editorial-line {
     height: 1px;
     width: 60px;
-    background-color: var(--text-main);
+    background-color: var(--accent);
     margin-bottom: 2rem;
 }
 
 /* Button Styles */
 .btn-primary {
     display: inline-block;
-    background-color: var(--text-main);
+    background-color: var(--accent);
     color: #FFFFFF !important;
-    padding: 12px 24px;
+    padding: 14px 28px;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 500;
     letter-spacing: 0.5px;
-    border: 1px solid var(--text-main);
-    transition: all 0.2s ease;
+    border: 1px solid var(--accent);
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .btn-primary:hover {
-    background-color: #FFFFFF;
-    color: var(--text-main) !important;
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
 }
 
 .btn-text {
@@ -71,12 +72,14 @@ p {
     font-size: 0.95rem;
     font-weight: 600;
     border-bottom: 1px solid var(--text-main);
-    padding-bottom: 2px;
+    padding-bottom: 3px;
     transition: opacity 0.2s ease;
 }
 
 .btn-text:hover {
     opacity: 0.6;
+    color: var(--accent) !important;
+    border-bottom-color: var(--accent);
 }
 
 /* Navigation */
@@ -102,18 +105,20 @@ p {
 }
 
 .logo-name {
-    font-family: var(--font-sans);
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: -0.5px;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 1.4rem;
     color: var(--text-main);
+    line-height: 1.1;
 }
 
+/* TREC Compliance: Brokerage identification font size prominently sized */
 .logo-title {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
-    text-transform: uppercase;
+    font-weight: 500;
     letter-spacing: 0.5px;
+    margin-top: 4px;
 }
 
 .nav-links {
@@ -130,125 +135,215 @@ p {
     color: var(--text-muted);
     font-size: 0.85rem;
     font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: var(--text-main);
+    color: var(--accent);
 }
 
 .nav-cta {
     font-weight: 600 !important;
-    color: var(--text-main) !important;
+    color: var(--accent) !important;
 }
 
 /* Page Headers */
 .page-header {
-    padding: 80px 0 40px 0;
+    padding: 100px 0 60px 0;
     background-color: var(--bg-alt);
     border-bottom: 1px solid var(--border-color);
 }
 
 .page-header h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    letter-spacing: -0.5px;
 }
 
 /* Section Spacing */
 .section {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .bg-alt {
     background-color: var(--bg-alt);
 }
 
+.bg-accent {
+    background-color: var(--text-main);
+    color: var(--bg-alt);
+}
+.bg-accent h2, .bg-accent p {
+    color: var(--bg-alt);
+}
+
 /* Hero Section */
 .hero {
     background-color: var(--bg-main);
-    padding: 80px 0 100px 0;
+    padding: 100px 0 120px 0;
     border-bottom: 1px solid var(--border-color);
 }
 
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 80px;
     align-items: center;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     letter-spacing: -1px;
 }
 
 .hero-subtext {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin-bottom: 2.5rem;
     max-width: 90%;
+    color: var(--text-main);
 }
 
 .hero-actions {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .image-placeholder {
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-color: #EBEBEB;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #999;
     font-size: 0.85rem;
+    overflow: hidden;
 }
 
-/* Footer */
-footer {
-    background-color: var(--text-main);
-    color: #fff;
-    padding: 60px 0;
-    text-align: center;
-}
-footer p {
-    color: #aaa;
-    font-size: 0.85rem;
-    margin-bottom: 5px;
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Forms */
+/* Value Props / Educator Edge Grid */
+.editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+.grid-item {
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+}
+.grid-item h3 {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.grid-number {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Forms (Lead Capture Flow) */
+.lead-capture-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
 .form-group {
     margin-bottom: 1.5rem;
 }
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 .form-control {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     border: 1px solid var(--border-color);
     background-color: var(--bg-alt);
     font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
 }
 .form-control:focus {
     outline: none;
     border-color: var(--accent);
 }
 
+/* TREC Compliant Footer */
+.site-footer {
+    background-color: var(--text-main);
+    color: #fff;
+    padding: 80px 0 40px 0;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+.footer-brand .logo-name {
+    color: #fff;
+}
+.footer-brand .broker-name {
+    display: block;
+    color: #A0B3C6;
+    font-size: 1.1rem; /* Prominent sizing for TREC compliance */
+    margin-top: 5px;
+    font-weight: 500;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+.footer-links a {
+    color: #A0B3C6;
+    text-decoration: none;
+    font-size: 0.85rem;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease;
+}
+.footer-links a:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #7A8F9E;
+}
+
 /* Mobile */
 @media (max-width: 900px) {
-    .hero-grid {
+    .hero-grid, .editorial-grid, .lead-capture-grid, .footer-grid {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
+    .hero h1 { font-size: 3rem; }
+    .page-header h1 { font-size: 2.5rem; }
 }
 @media (max-width: 600px) {
-    .nav-links {
-        display: none;
-    }
+    .nav-links { display: none; }
+    .footer-bottom { flex-direction: column; gap: 10px; }
 }
